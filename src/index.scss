@@ -7,7 +7,23 @@
 }
 
 body {
-  background: linear-gradient(to right, #700101, #000000, #000000);
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #716fb8;
+  }
 }
 
 header {
@@ -21,7 +37,7 @@ header {
     text-align: center;
 
     strong {
-      color: #ff4136;
+      color: #716fb8;
     }
   }
 }
@@ -39,7 +55,7 @@ header {
       padding-right: 16px;
 
       h3 {
-        color: #ff4136;
+        color: #716fb8;
         font-size: 24px;
         margin-bottom: 16px;
       }
@@ -54,7 +70,7 @@ header {
         margin-bottom: 16px;
 
         background-color: #eee;
-        border-radius: 999px;
+        border-radius: 7px;
         text-decoration: none;
 
         transition: 0.4s;
@@ -90,7 +106,7 @@ header {
           width: 100%;
           max-width: 400px;
           padding: 16px;
-          border-radius: 999px;
+          border-radius: 7px;
           background-color: #eee;
 
           transition: 0.4s;
